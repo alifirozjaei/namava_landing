@@ -1,0 +1,22 @@
+/* Define font style */
+@font-face {
+    font-family: 'Yekan';
+    src: url("/assets/fonts/Yekan.ttf");
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url("/assets/fonts/IRANSans.ttf");
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url("/assets/fonts/vazir.ttf");
+}
+/* End define font style */
+
+
+body {
+    font-family: 'Vazir';
+    direction: rtl;
+}
