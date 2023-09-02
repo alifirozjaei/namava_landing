@@ -40,8 +40,66 @@ img {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .align-items-center {
   align-items: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-ltr {
+  direction: rtl;
+}
+
+.text {
+  font-size: 12px;
+  color: #999;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-top-150 {
+  margin-top: 150px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.p-5 {
+  padding: 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
 }
 
 body {
@@ -200,9 +258,72 @@ body {
   width: 100%;
   margin-top: 60px;
 }
+
+#config-info {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  margin-top: 100px;
+  text-align: center;
+  grid-gap: 50px;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+#config-info img {
+  width: 150px;
+}
+
+#remote-box img {
+  width: 50%;
+}
+
+#remote-box {
+  margin-top: 50px;
+}
+
+#remote-box h4 {
+  margin-top: 30px;
+}
+
+#android-tv {
+  margin-top: 50px;
+}
+
+#android-tv h4 {
+  margin-top: 30px;
+}
 /* end intro section */
 
 @media screen and (min-width: 640px) {
+  .grid-md-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-md {
+    display: block;
+  }
+
+  .direction-md-rtl {
+    direction: rtl;
+  }
+
+  .direction-md-ltr {
+    direction: ltr;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
   #navbar {
     padding: 0 56px;
     height: 80px;
@@ -240,15 +361,63 @@ body {
     margin-top: 20px;
     line-height: 28px;
   }
+
+  #config-info {
+    font-size: 14px;
+  }
+
+  #remote-box img {
+    max-width: 295px;
+  }
+
+  #remote-box {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .grid-lg-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-lg {
+    display: block;
+  }
   .container {
     padding: 0 10%;
   }
   #navbar {
     padding: 0 56px;
     height: 80px;
+  }
+
+  .direction-lg-rtl {
+    direction: rtl;
+  }
+
+  .direction-lg-ltr {
+    direction: ltr;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .w-lg-80 {
+    width: 80%;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-start {
+    text-align: start;
   }
 
   /* start intro section */
@@ -324,6 +493,37 @@ body {
     font-size: 16px;
     margin-top: 24px;
     line-height: 28px;
+  }
+
+  #config-info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 30px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #config-info img {
+    width: 150px;
+  }
+
+  #remote-box img {
+    width: 295px;
+  }
+
+  #remote-box {
+    margin-top: 150px;
+  }
+
+  #android-tv {
+    margin-top: 60px;
+  }
+
+  #watch-online-box div {
+    margin: 0 auto;
+    margin-top: -120px;
+    width: 50%;
   }
   /* end order-top styles */
 }
