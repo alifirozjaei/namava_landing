@@ -175,10 +175,29 @@ body {
   border-radius: 5px;
   margin-top: 20px;
 }
+
+#what-is .image-box img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#what-is {
+  text-align: center;
+}
+
+#what-is h2 {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+#what-is p {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #999;
+}
 /* end intro section */
 
 @media screen and (min-width: 640px) {
-
   #navbar {
     padding: 0 56px;
     height: 80px;
@@ -204,6 +223,17 @@ body {
 
   #purchase-info .intro-dis {
     display: block;
+  }
+
+  #what-is h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  #what-is p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 28px;
   }
 }
 
@@ -271,6 +301,24 @@ body {
 
   #purchase-info .intro-pre {
     padding: 60px;
+  }
+
+  #what-is div {
+    width: 58%;
+    margin: 0 auto;
+  }
+
+  #what-is h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  #what-is p {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 28px;
   }
 
   /* end order-top styles */
