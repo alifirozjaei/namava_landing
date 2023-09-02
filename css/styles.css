@@ -15,9 +15,29 @@
 }
 /* End define font style */
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
-img{
+img {
   max-width: 100%;
+}
+.container {
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 body {
@@ -56,12 +76,6 @@ body {
   display: none;
 }
 
-.container {
-  margin: 0;
-  margin-top: 80px;
-  padding: 0;
-}
-
 /* start intro section */
 /* start order-top styles */
 #box-namava {
@@ -87,10 +101,80 @@ body {
 }
 /* end order-top styles */
 
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+.badge {
+  padding: 2px 10px;
+  background-color: #d95c5c;
+  border-radius: 5px;
+  font-size: 10px !important;
+}
+
+#purchase-info .intro-dis {
+  margin-top: 40px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+#purchase-info .intro-dis img {
+  width: 145px;
+  height: auto;
+}
+
+#purchase-info .intro-dis h5 {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+#purchase-info .intro-dis {
+  font-size: small;
+}
+
+#purchase-info .intro-pre {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#purchase-info .intro-pre > div {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#purchase-info .intro-pre h3 {
+  font-size: 18px;
+}
+
+#purchase-info .intro-pre > div > div:nth-child(2) {
+  margin: 20px 0;
+}
+
+#purchase-info .intro-pre span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#purchase-info .intro-pre a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 10px;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
 /* end intro section */
 
 @media screen and (min-width: 640px) {
-  
+
   #navbar {
     padding: 0 56px;
     height: 80px;
@@ -108,11 +192,21 @@ body {
     padding: 0 56px;
   }
 
-  
+  #purchase-info {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+  }
+
+  #purchase-info .intro-dis {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-
+  .container {
+    padding: 0 12% 0 3%;
+  }
   #navbar {
     padding: 0 56px;
     height: 80px;
@@ -151,5 +245,29 @@ body {
     text-align: start;
     color: #999;
   }
+
+  #purchase-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  #purchase-info .intro-dis {
+    margin-top: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  #purchase-info .intro-dis img {
+    width: 205px;
+    height: auto;
+  }
+
+  #purchase-info .intro-pre {
+    padding: 60px;
+  }
+
   /* end order-top styles */
 }
