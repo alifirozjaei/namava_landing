@@ -15,6 +15,11 @@
 }
 /* End define font style */
 
+
+img{
+  max-width: 100%;
+}
+
 body {
   font-family: "Vazir";
   direction: rtl;
@@ -24,14 +29,15 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #000;
+  color: #fff;
 }
 
 #navbar {
-  background-color: rgba(0,0,0,0);
-  position: fixed;  /* Set the navbar to fixed position */
-  top: 0;   
-  width: 100%; 
-  transition: all 0.5s;  
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
   display: flex;
   align-items: center;
   height: 70px;
@@ -46,11 +52,9 @@ body {
   font-size: 12px;
 }
 
-
 #navbar .logo-lg {
   display: none;
 }
-
 
 .container {
   margin: 0;
@@ -58,7 +62,35 @@ body {
   padding: 0;
 }
 
+/* start intro section */
+/* start order-top styles */
+#box-namava {
+  padding: 5px;
+}
+
+#box-namava img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+#box-namava .box-namava-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+#box-namava .box-namava-text {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #999;
+  text-align: center;
+}
+/* end order-top styles */
+
+/* end intro section */
+
 @media screen and (min-width: 640px) {
+  
   #navbar {
     padding: 0 56px;
     height: 80px;
@@ -72,16 +104,52 @@ body {
     display: none;
   }
 
-  .container{
+  .container {
     padding: 0 56px;
   }
+
+  
 }
 
 @media screen and (min-width: 1280px) {
+
   #navbar {
     padding: 0 56px;
     height: 80px;
   }
 
-  
+  /* start intro section */
+
+  /* start order-top styles */
+  #box-namava {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    padding: 40px 0;
+    direction: ltr;
+  }
+
+  #box-namava > div {
+    padding: 50px;
+    direction: rtl;
+  }
+
+  #box-namava img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  #box-namava .box-namava-title {
+    font-size: 20px;
+    text-align: start;
+  }
+
+  #box-namava .box-namava-text {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: start;
+    color: #999;
+  }
+  /* end order-top styles */
 }
