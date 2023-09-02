@@ -8,10 +8,10 @@ window.addEventListener("load", function () {
     let navbar = document.getElementById("navbar");
 
     if (prevScrollpos > currentScrollPos) {
-      // if scroll down hide navbar
+      // if scroll up show navbar
       navbar.style.top = "0";
     } else {
-      // if scroll up show navbar
+      // if scroll down hide navbar
       navbar.style.top = "-100px";
     }
 

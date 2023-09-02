@@ -20,18 +20,21 @@ body {
   direction: rtl;
   margin: 0;
   padding: 0;
+  background-image: url("/assets/images/nmv-background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: #000;
 }
 
 #navbar {
-  background: transparent;
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: rgba(0,0,0,0);
+  position: fixed;  /* Set the navbar to fixed position */
+  top: 0;   
+  width: 100%; 
+  transition: all 0.5s;  
   display: flex;
   align-items: center;
-  height: 70;
+  height: 70px;
   padding: 0 20px;
 }
 
@@ -43,9 +46,11 @@ body {
   font-size: 12px;
 }
 
+
 #navbar .logo-lg {
   display: none;
 }
+
 
 @media screen and (min-width: 640px) {
   #navbar {
@@ -65,6 +70,6 @@ body {
 @media screen and (min-width: 1280px) {
   #navbar {
     padding: 0 56px;
-    height: px;
+    height: 80px;
   }
 }
