@@ -1,22 +1,70 @@
 /* Define font style */
 @font-face {
-    font-family: 'Yekan';
-    src: url("/assets/fonts/Yekan.ttf");
+  font-family: "Yekan";
+  src: url("/assets/fonts/Yekan.ttf");
 }
 
 @font-face {
-    font-family: 'IRANSans';
-    src: url("/assets/fonts/IRANSans.ttf");
+  font-family: "IRANSans";
+  src: url("/assets/fonts/IRANSans.ttf");
 }
 
 @font-face {
-    font-family: 'Vazir';
-    src: url("/assets/fonts/vazir.ttf");
+  font-family: "Vazir";
+  src: url("/assets/fonts/vazir.ttf");
 }
 /* End define font style */
 
-
 body {
-    font-family: 'Vazir';
-    direction: rtl;
+  font-family: "Vazir";
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#navbar {
+  background: transparent;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  display: flex;
+  align-items: center;
+  height: 70;
+  padding: 0 20px;
+}
+
+/* set style for navbar link */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 12px;
+}
+
+#navbar .logo-lg {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  #navbar {
+    padding: 0 56px;
+    height: 80px;
+  }
+
+  #navbar .logo-lg {
+    display: block;
+  }
+
+  #navbar .logo-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #navbar {
+    padding: 0 56px;
+    height: px;
+  }
 }
