@@ -25,5 +25,7 @@ window.addEventListener("load", function () {
   });
 
 
-  
+  document.getElementById("config-expand-button").addEventListener('click',() => {
+    document.getElementById("config-box").classList.toggle("config-expand"); 
+  })
 });

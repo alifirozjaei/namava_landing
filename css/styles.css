@@ -292,6 +292,49 @@ body {
 #android-tv h4 {
   margin-top: 30px;
 }
+
+#config{
+  margin:100px auto; 
+}
+
+#config .config-box{
+  padding:40px;
+  background-color:rgb(18,18,18); 
+  display:block;
+  overflow:hidden; 
+  height:270px; 
+  position:relative; 
+  transition:all ease 0.3s;
+}
+
+#config .config-box div{
+  padding: 0 25px;
+  margin-bottom: 25px;
+
+}
+
+#config .config-box div p{
+  font-size: 12px;
+  margin-bottom: 18px;
+  color:rgb(170, 170, 170);
+}
+
+#config .config-box div h5{
+  margin-bottom: 14px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.config-expand{
+  height:1270px !important;
+}
+
+#config-expand-button{
+  padding:15px;
+  color:rgb(110, 184, 255);
+  cursor:pointer;
+  background-color:rgb(18,18,18); 
+}
 /* end intro section */
 
 @media screen and (min-width: 640px) {
@@ -373,6 +416,52 @@ body {
   #remote-box {
     margin-top: 100px;
   }
+
+  #config{
+    margin:100px auto; 
+  }
+
+  #config .config-box{
+    padding:40px;
+    background-color:rgb(18,18,18); 
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    overflow:hidden; 
+    height:350px; 
+    position:relative; 
+    transition:all ease 0.3s;
+  }
+
+  #config .config-box div{
+    padding: 0 25px;
+  }
+
+  #config .config-box div:nth-child(2){
+    margin-bottom: 25px;
+  }
+
+  #config .config-box div p{
+    font-size: 14px;
+    margin-bottom: 18px;
+    color:rgb(170, 170, 170);
+  }
+
+  #config .config-box div h5{
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .config-expand{
+    height:740px !important;
+  }
+
+  #config-expand-button{
+    padding:15px;
+    color:rgb(110, 184, 255);
+    cursor:pointer;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -385,7 +474,7 @@ body {
     display: block;
   }
   .container {
-    padding: 0 10%;
+    padding: 0 6%;
   }
   #navbar {
     padding: 0 56px;
@@ -524,6 +613,47 @@ body {
     margin: 0 auto;
     margin-top: -120px;
     width: 50%;
+  }
+
+  #config {
+    margin: 100px auto;
+  }
+
+  #config .config-box {
+    padding: 40px;
+    background-color: rgb(18, 18, 18);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height:auto !important;
+  }
+
+  #config .config-box div {
+    padding: 0 25px;
+    border-left: 1px solid rgb(170, 170, 170);
+  }
+
+  #config .config-box div:nth-child(4) {
+    border-left: none;
+  }
+
+  #config .config-box div p {
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: rgb(170, 170, 170);
+  }
+
+  #config .config-box div h5 {
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  #config-expand-button{
+    display:none; 
+  }
+
+  .config-expand{
+    height:auto !important;
   }
   /* end order-top styles */
 }
