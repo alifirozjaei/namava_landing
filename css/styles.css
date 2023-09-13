@@ -335,7 +335,58 @@ body {
   cursor:pointer;
   background-color:rgb(18,18,18); 
 }
-/* end intro section */
+
+.faq-item{
+  border-bottom:1px solid #37383E;
+}
+
+.faq-item:last-child{
+  border-bottom:none;
+}
+
+.faq-item .collapsible {
+  background-color: rgb(18,18,18); 
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family:"Vazir";
+  font-weight:normal;
+  text-align:right;
+  color:#ccc;
+}
+
+
+.faq-item .content {
+  padding: 0 18px;
+  background-color: rgb(18,18,18); 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size:14px;
+}
+
+.faq-item .content p{
+  margin:5px 0;
+  color:rgb(170, 170, 170);
+}
+
+.faq-item .collapsible:after {
+  content: '\0276E'; 
+  font-size: 13px;
+  color: white;
+  float: left;
+  margin-left: 5px;
+  position:absoloute;
+  transform:rotate(90deg);
+}
+
+.faq-item .active:after {
+  content: "\0276E"; 
+  transform:rotate(-90deg);
+}
 
 @media screen and (min-width: 640px) {
   .grid-md-2 {
@@ -629,7 +680,7 @@ body {
 
   #config .config-box div {
     padding: 0 25px;
-    border-left: 1px solid rgb(170, 170, 170);
+    border-left: 1px solid #37383E;
   }
 
   #config .config-box div:nth-child(4) {
