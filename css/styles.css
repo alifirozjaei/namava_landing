@@ -58,7 +58,7 @@ img {
 }
 
 .direction-ltr {
-  direction: rtl;
+  direction: ltr;
 }
 
 .text {
@@ -175,7 +175,7 @@ body {
   font-size: 10px !important;
 }
 
-#purchase-info .intro-dis {
+.intro-dis {
   margin-top: 40px;
   text-align: center;
   display: grid;
@@ -183,46 +183,46 @@ body {
   align-items: center;
 }
 
-#purchase-info .intro-dis img {
+.intro-dis img {
   width: 145px;
   height: auto;
 }
 
-#purchase-info .intro-dis h5 {
+.intro-dis h5 {
   font-size: 12px;
   margin: 15px 0;
 }
 
-#purchase-info .intro-dis {
+.intro-dis {
   font-size: small;
 }
 
-#purchase-info .intro-pre {
+.intro-pre {
   padding: 10px;
   margin-top: 10px;
 }
 
-#purchase-info .intro-pre > div {
+.intro-pre > div {
   background-color: #121212;
   padding: 20px;
   border-radius: 10px;
 }
 
-#purchase-info .intro-pre h3 {
+.intro-pre h3 {
   font-size: 18px;
 }
 
-#purchase-info .intro-pre > div > div:nth-child(2) {
+.intro-pre > div > div:nth-child(2) {
   margin: 20px 0;
 }
 
-#purchase-info .intro-pre span {
+.intro-pre span {
   font-size: 12px;
   display: flex;
   align-items: center;
 }
 
-#purchase-info .intro-pre a {
+.intro-pre a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,99 +293,101 @@ body {
   margin-top: 30px;
 }
 
-#config{
-  margin:100px auto; 
+#config {
+  margin: 100px auto;
 }
 
-#config .config-box{
-  padding:40px;
-  background-color:rgb(18,18,18); 
-  display:block;
-  overflow:hidden; 
-  height:270px; 
-  position:relative; 
-  transition:all ease 0.3s;
+#config .config-box {
+  padding: 40px;
+  background-color: rgb(18, 18, 18);
+  display: block;
+  overflow: hidden;
+  height: 270px;
+  position: relative;
+  transition: all ease 0.3s;
 }
 
-#config .config-box div{
+#config .config-box div {
   padding: 0 25px;
   margin-bottom: 25px;
-
 }
 
-#config .config-box div p{
+#config .config-box div p {
   font-size: 12px;
   margin-bottom: 18px;
-  color:rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
 }
 
-#config .config-box div h5{
+#config .config-box div h5 {
   margin-bottom: 14px;
   font-weight: 300;
   font-size: 16px;
 }
 
-.config-expand{
-  height:1270px !important;
+.config-expand {
+  height: 1270px !important;
 }
 
-#config-expand-button{
-  padding:15px;
-  color:rgb(110, 184, 255);
-  cursor:pointer;
-  background-color:rgb(18,18,18); 
+#config-expand-button {
+  padding: 15px;
+  color: rgb(110, 184, 255);
+  cursor: pointer;
+  background-color: rgb(18, 18, 18);
 }
 
-.faq-item{
-  border-bottom:1px solid #37383E;
+.faq-item {
+  border-bottom: 1px solid #37383e;
 }
 
-.faq-item:last-child{
-  border-bottom:none;
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 .faq-item .collapsible {
-  background-color: rgb(18,18,18); 
+  background-color: rgb(18, 18, 18);
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   outline: none;
   font-size: 14px;
-  font-family:"Vazir";
-  font-weight:normal;
-  text-align:right;
-  color:#ccc;
+  font-family: "Vazir";
+  font-weight: normal;
+  text-align: right;
+  color: #ccc;
 }
-
 
 .faq-item .content {
   padding: 0 18px;
-  background-color: rgb(18,18,18); 
+  background-color: rgb(18, 18, 18);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  font-size:14px;
+  font-size: 14px;
 }
 
-.faq-item .content p{
-  margin:5px 0;
-  color:rgb(170, 170, 170);
+.faq-item .content p {
+  margin: 5px 0;
+  color: rgb(170, 170, 170);
 }
 
 .faq-item .collapsible:after {
-  content: '\0276E'; 
+  content: "\0276E";
   font-size: 13px;
   color: white;
   float: left;
   margin-left: 5px;
-  position:absoloute;
-  transform:rotate(90deg);
+  position: absoloute;
+  transform: rotate(90deg);
 }
 
 .faq-item .active:after {
-  content: "\0276E"; 
-  transform:rotate(-90deg);
+  content: "\0276E";
+  transform: rotate(-90deg);
+}
+
+#purchase{
+  margin: 100px auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -441,7 +443,7 @@ body {
     align-items: center;
   }
 
-  #purchase-info .intro-dis {
+  .intro-dis {
     display: block;
   }
 
@@ -468,51 +470,58 @@ body {
     margin-top: 100px;
   }
 
-  #config{
-    margin:100px auto; 
+  #config {
+    margin: 100px auto;
   }
 
-  #config .config-box{
-    padding:40px;
-    background-color:rgb(18,18,18); 
+  #config .config-box {
+    padding: 40px;
+    background-color: rgb(18, 18, 18);
     display: grid;
-    grid-template-columns: 50% 50% ;
-    overflow:hidden; 
-    height:350px; 
-    position:relative; 
-    transition:all ease 0.3s;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    transition: all ease 0.3s;
   }
 
-  #config .config-box div{
+  #config .config-box div {
     padding: 0 25px;
   }
 
-  #config .config-box div:nth-child(2){
+  #config .config-box div:nth-child(2) {
     margin-bottom: 25px;
   }
 
-  #config .config-box div p{
+  #config .config-box div p {
     font-size: 14px;
     margin-bottom: 18px;
-    color:rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
   }
 
-  #config .config-box div h5{
+  #config .config-box div h5 {
     margin-bottom: 18px;
     font-weight: 300;
     font-size: 16px;
   }
 
-  .config-expand{
-    height:740px !important;
+  .config-expand {
+    height: 740px !important;
   }
 
-  #config-expand-button{
-    padding:15px;
-    color:rgb(110, 184, 255);
-    cursor:pointer;
+  #config-expand-button {
+    padding: 15px;
+    color: rgb(110, 184, 255);
+    cursor: pointer;
   }
 
+  #purchase .intro-dis {
+    margin-top: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -600,7 +609,7 @@ body {
     align-items: center;
   }
 
-  #purchase-info .intro-dis {
+  .intro-dis {
     margin-top: 0;
     text-align: center;
     display: grid;
@@ -608,12 +617,12 @@ body {
     align-items: center;
   }
 
-  #purchase-info .intro-dis img {
+  .intro-dis img {
     width: 205px;
     height: auto;
   }
 
-  #purchase-info .intro-pre {
+  .intro-pre {
     padding: 60px;
   }
 
@@ -675,12 +684,12 @@ body {
     background-color: rgb(18, 18, 18);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height:auto !important;
+    height: auto !important;
   }
 
   #config .config-box div {
     padding: 0 25px;
-    border-left: 1px solid #37383E;
+    border-left: 1px solid #37383e;
   }
 
   #config .config-box div:nth-child(4) {
@@ -699,12 +708,12 @@ body {
     font-size: 16px;
   }
 
-  #config-expand-button{
-    display:none; 
+  #config-expand-button {
+    display: none;
   }
 
-  .config-expand{
-    height:auto !important;
+  .config-expand {
+    height: auto !important;
   }
   /* end order-top styles */
 }
