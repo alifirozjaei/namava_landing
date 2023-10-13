@@ -13,6 +13,64 @@
   font-family: "Vazir";
   src: url("/assets/fonts/vazir.ttf");
 }
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: url("../assets/fonts/IRANYekanThin.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/IRANYekanLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/IRANYekanRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("../assets/fonts/IRANYekanMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/IRANYekanBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/IRANYekanExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url("../assets/fonts/IRANYekanBlack.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 950;
+  font-display: swap;
+  src: url("../assets/fonts/IRANYekanExtraBlack.ttf") format("truetype");
+}
+
 /* End define font style */
 
 * {
@@ -28,9 +86,9 @@ img {
   max-width: 100%;
 }
 .container {
-  margin: 0;
-  margin-top: 80px;
+  margin: 80px auto 0;
   padding: 0;
+  max-width: 1440px;
 }
 .d-flex {
   display: flex;
@@ -102,8 +160,12 @@ img {
   display: flex;
 }
 
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
 body {
-  font-family: "Vazir";
+  font-family: iranyekan;
   direction: rtl;
   margin: 0;
   padding: 0;
@@ -269,6 +331,10 @@ body {
   font-size: 12px;
 }
 
+#config-info span {
+  display: block;
+}
+
 #config-info img {
   width: 150px;
 }
@@ -302,9 +368,20 @@ body {
   background-color: rgb(18, 18, 18);
   display: block;
   overflow: hidden;
-  height: 270px;
+  height: 275px;
   position: relative;
   transition: all ease 0.3s;
+}
+
+.config-box ~ #config-expand-button::after{
+  content: "\0276E";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+
+.config-box.config-expand ~ #config-expand-button::after{
+  transform: rotate(-90deg);
 }
 
 #config .config-box div {
@@ -312,10 +389,11 @@ body {
   margin-bottom: 25px;
 }
 
-#config .config-box div p {
+#config .config-box div span {
   font-size: 12px;
   margin-bottom: 18px;
   color: rgb(170, 170, 170);
+  display: block;
 }
 
 #config .config-box div h5 {
@@ -325,7 +403,7 @@ body {
 }
 
 .config-expand {
-  height: 1270px !important;
+  height: 1315px !important;
 }
 
 #config-expand-button {
@@ -333,6 +411,7 @@ body {
   color: rgb(110, 184, 255);
   cursor: pointer;
   background-color: rgb(18, 18, 18);
+  position: relative;
 }
 
 .faq-item {
@@ -386,7 +465,7 @@ body {
   transform: rotate(-90deg);
 }
 
-#purchase{
+#purchase {
   margin: 100px auto;
 }
 
@@ -480,7 +559,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     overflow: hidden;
-    height: 350px;
+    height: 360px;
     position: relative;
     transition: all ease 0.3s;
   }
@@ -493,10 +572,11 @@ body {
     margin-bottom: 25px;
   }
 
-  #config .config-box div p {
+  #config .config-box div span {
     font-size: 14px;
     margin-bottom: 18px;
     color: rgb(170, 170, 170);
+    display: block;
   }
 
   #config .config-box div h5 {
@@ -506,7 +586,7 @@ body {
   }
 
   .config-expand {
-    height: 740px !important;
+    height: 780px !important;
   }
 
   #config-expand-button {
@@ -696,8 +776,9 @@ body {
     border-left: none;
   }
 
-  #config .config-box div p {
+  #config .config-box div span {
     font-size: 14px;
+    display: block;
     margin-bottom: 18px;
     color: rgb(170, 170, 170);
   }
