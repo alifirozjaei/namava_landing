@@ -61,4 +61,6 @@ window.addEventListener("load", function () {
       prevActiveCollapsibleItemContent = content;
     });
   }
+
+
 });
