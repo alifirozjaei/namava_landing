@@ -373,14 +373,14 @@ body {
   transition: all ease 0.3s;
 }
 
-.config-box ~ #config-expand-button::after{
+.config-box ~ #config-expand-button::after {
   content: "\0276E";
   display: inline-block;
   transform: rotate(90deg);
   margin-right: 5px;
 }
 
-.config-box.config-expand ~ #config-expand-button::after{
+.config-box.config-expand ~ #config-expand-button::after {
   transform: rotate(-90deg);
 }
 
@@ -518,6 +518,7 @@ body {
 
   #purchase-info {
     display: grid;
+    grid-gap: 30px;
     grid-template-columns: 25% 75%;
     align-items: center;
   }
